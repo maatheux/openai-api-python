@@ -19,4 +19,4 @@ response = client.chat.completions.create(
     model= "gpt-4"
 )
 
-print(response)
+print(response.choices[0].message.content)
